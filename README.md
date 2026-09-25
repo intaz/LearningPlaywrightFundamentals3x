@@ -34,7 +34,13 @@ npx playwright test
 Run a single test file:
 
 ```bash
-npx playwright test tests/example.spec.ts
+npx playwright test tests/webtable2.spec.ts
+```
+
+Run tests matching a specific title:
+
+```bash
+npx playwright test -g "Login Page"
 ```
 
 Run tests with the UI runner:
@@ -48,6 +54,16 @@ Open the HTML report after a run:
 ```bash
 npx playwright show-report
 ```
+
+## Topics Covered
+
+- `tests/example.spec.ts` — basic navigation and assertions
+- `tests/task1.spec.ts` — form filling, checkboxes, and URL assertions
+- `tests/testAnnotations.spec.ts` — test annotations (`test.skip`, `test.only`, `test.fail`, `test.fixme`, `test.slow`)
+- `tests/testDescribe.spec.ts` — grouping tests with `test.describe`
+- `tests/webtable1.spec.ts` — reading web table rows and columns
+- `tests/webtable2.spec.ts` — dynamic XPath table traversal and checkbox selection
+- `tests/dynamicWebTable.spec.ts` — dynamic table handling with `following-sibling` axes
 
 ## Project Structure
 
