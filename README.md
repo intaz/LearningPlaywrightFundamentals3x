@@ -64,10 +64,13 @@ npx playwright show-report
 - `tests/webtable1.spec.ts` — reading web table rows and columns
 - `tests/webtable2.spec.ts` — dynamic XPath table traversal and checkbox selection
 - `tests/dynamicWebTable.spec.ts` — dynamic table handling with `following-sibling` axes
+- `tests/hoverTest.spec.ts` — hover menu interaction with test-id locators
+- `tests/testApplitools.spec.ts` — Applitools demo dashboard; calculates income, spending, and amount left
 
 ## Project Structure
 
 - `tests/` — Playwright test files
+- `utils/` — reusable helpers (e.g. amount parsing/classification)
 - `playwright.config.ts` — Playwright configuration (browsers, reporters, etc.)
 - `.gitignore` — Ignored build and cache artifacts
 
